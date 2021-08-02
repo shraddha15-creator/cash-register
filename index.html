@@ -1,69 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cash Register</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    <div id="body-wrapper">
-            <div class="container">
-                <section>
-                    <h1>Cash Register</h1>
-                    <p>Enter the bill amount and cash given by the customer and know minimum number of notes to return.</p>
-                </section>
-                <main class="main">
-                    <section class="bill-input">
-                        <h3><label for="bill-input">Bill Amount</label></h3>
-                        <input type="number" class="bill-amount" name="bill-amount">
-                        <div class="bill-amount-btn">
-                            <button class="btn btn-submit-cash">Submit</button>
-                        </div>
-                    </section>
-                    <section class="cash-input">
-                        <h3><label for="cash-input">Cash Given</label></h3>
-                        <input type="number" class="cash-amount" name="cash-amount">
-                        <div class="cash-amount-btn">
-                            <button class="btn btn-submit-cash">Submit Cash Amount</button>
-                            <button class="btn btn-reset">Reset</button>
-                        </div>
-                        <div class="error-msg">
-                            <p id="error-output">please enter valid cash amount</p>
-                        </div>
-                        <div class="output">
-                            <table>
-                                <tr>
-                                    <th>Notes</th>
-                                        <td>2000</td>
-                                        <td>500</td>
-                                        <td>100</td>
-                                        <td>20</td>
-                                        <td>10</td>
-                                        <td>5</td>
-                                        <td>1</td>
-                                </tr>
-                                <tr>
-                                    <th>No. of Notes</th>
-                                        <td class="shownotes"></td>
-                                        <td class="shownotes"></td>
-                                        <td class="shownotes"></td>
-                                        <td class="shownotes"></td>
-                                        <td class="shownotes"></td>
-                                        <td class="shownotes"></td>
-                                        <td class="shownotes"></td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div>
-                            <button class="btn btn-reset">Reset</button>
-                        </div>
-                    </section>
-                </main>
-            </div>
+    <div class="container">
+
+        <h1>Cash Register Manager</h1>
+        <p>Enter the bill amount and cash given by the customer and know minimum number of notes to return.</p>
+        
+        <label for="bill-amount">Bill Amount : </label> 
+        <input id="bill-amount" type="text">
+        <button id="next-button">Next</button>
+        
+        <br>
+        <br>
+        
+        <label for="cash-given">Cash Given : </label>
+        <input id="cash-given" type="text">
+        <button id="check-button">Check</button>
+        <p id="error-message"></p>
+
+        <table>
+            <h2>Return Change</h2>
+            <tr>
+                <th>No of Notes</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Notes</th>
+                <td>2000</td>
+                <td>500</td>
+                <td>100</td>
+                <td>20</td>
+                <td>10</td>
+                <td>5</td>
+                <td>1</td>
+            </tr>
+        </table>
 
     </div>
+    <script src="./app.js"></script>
 </body>
+
 </html>

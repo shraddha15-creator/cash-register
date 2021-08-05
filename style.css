@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 body{
-    background-color:gray ;
+    background-color:rgb(209, 208, 208) ;
     height: 100vh;
     max-width: 900px;
     font-family: 'Poppins', sans-serif;
@@ -11,12 +11,21 @@ body{
 }
 
 .container {
+    background-color: rgb(164, 164, 164);
     display:flex;
     flex-direction: column;
     width: 100%;
     border-radius: 20px;
     box-shadow: 5px 5px 10px 5px #353535;
     padding: 2rem;
+}
+
+h1, p{
+    color: rgb(25, 25, 25);
+}
+
+.label{
+    color: rgb(8, 8, 8);
 }
 
 .container input{
@@ -34,10 +43,17 @@ body{
     cursor: pointer;
 }
 
+
+
 table{
     width: 100%;
     table-layout: fixed;
     box-shadow: 5px 5px 10px 5px #353535;
+}
+
+.no-of-notes{
+    background-color: white;
+    font-weight: bold;
 }
 
 .output table,th,td{
@@ -45,4 +61,14 @@ table{
     padding: 0.5rem;
 }
 
+.cash-given-input{
+    display: none;
+}
+.returnChange{
+    display:none;
+}
+#error-message{
+    color: rgb(164, 6, 6);
+    padding-top: 1rem;
+}
 

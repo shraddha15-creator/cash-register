@@ -65,7 +65,7 @@ function compare(remainder, noteAmount, index){
     if(remainder >= noteAmount){
         let notes = Math.floor(remainder/noteAmount);
         remainder = remainder - notes*noteAmount;
-        availableNotes[index].innerText = `${notes}`;
+        noOfNotes[index].innerText = `${notes}`;
     }
     return remainder
 }
